@@ -15,7 +15,7 @@ public class Main {
 
         double imc = peso / (Math.pow(altura, 2));
 
-        if(imc <= 18.5){
+        if (imc <= 18.5) {
             System.out.println("Abaixo do peso");
         } else if (imc > 18.5 && imc <= 24.9) {
             System.out.println("Peso ideal");
@@ -25,9 +25,12 @@ public class Main {
             System.out.println("Obesidade de grau 1");
         } else if (imc > 34.9 && imc <= 39.9) {
             System.out.println("Obesidade de grau 2 (severa)");
-        }
-        else{
+        } else {
             System.out.println("Obesidade de grau 3 (mórbida)");
         }
     }
 }
+
+//buscar refatorar atividaded do imc
+//ajustar locale e adicionar isso no estudo obsidian
+//falar no estudo sobre a diferença do float e double https://stackoverflow.com/questions/27598078/float-and-double-datatype-in-java
