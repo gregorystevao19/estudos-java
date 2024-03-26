@@ -29,6 +29,5 @@ public class Main {
         else{
             System.out.println("Obesidade de grau 3 (mórbida)");
         }
-
     }
 }
