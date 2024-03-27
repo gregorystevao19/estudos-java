@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
-
 
         System.out.print("Informe sua altura em metros: ");
         double altura = scanner.nextDouble();
@@ -16,22 +16,19 @@ public class Main {
         double imc = peso / (Math.pow(altura, 2));
 
         if (imc <= 18.5) {
-            System.out.println("Abaixo do peso");
+            System.out.printf("O resultado do seu IMC foi de: %.2f. Isso indica que você está: ABAIXO DO PESO", imc);
         } else if (imc > 18.5 && imc <= 24.9) {
-            System.out.println("Peso ideal");
+            System.out.printf("O resultado do seu IMC foi de: %.2f. Isso indica que você está: PESO IDEAL", imc);
         } else if (imc > 24.9 && imc <= 29.9) {
-            System.out.println("Levemente acima do peso");
+            System.out.printf("O resultado do seu IMC foi de: %.2f. Isso indica que você está: LEVEMENTE ACIMA DO PESO", imc);
         } else if (imc > 29.9 && imc <= 34.9) {
-            System.out.println("Obesidade de grau 1");
+            System.out.printf("O resultado do seu IMC foi de: %.2f. Isso indica que você está: OBESIDADE DE GRAU 1", imc);
         } else if (imc > 34.9 && imc <= 39.9) {
-            System.out.println("Obesidade de grau 2 (severa)");
+            System.out.printf("O resultado do seu IMC foi de: %.2f. Isso indica que você está: OBESIDADE DE GRAU 2 (SEVERA)", imc);
         } else {
-            System.out.println("Obesidade de grau 3 (mórbida)");
+            System.out.printf("O resultado do seu IMC foi de: %.2f. Isso indica que você está: OBESIDADE DE GRAU 3 (MÓRBIDA)", imc);
         }
 
-        System.out.println(imc);
+        scanner.close();
     }
 }
-
-//Adicionar no Obsidian o estudo do Locale
-//melhorar as saídas, informando também quanto foi o imc
