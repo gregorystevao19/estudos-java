@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
 
 
@@ -28,9 +28,10 @@ public class Main {
         } else {
             System.out.println("Obesidade de grau 3 (mórbida)");
         }
+
+        System.out.println(imc);
     }
 }
 
-//buscar refatorar atividaded do imc
-//ajustar locale e adicionar isso no estudo obsidian
-//falar no estudo sobre a diferença do float e double https://stackoverflow.com/questions/27598078/float-and-double-datatype-in-java
+//Adicionar no Obsidian o estudo do Locale
+//melhorar as saídas, informando também quanto foi o imc
